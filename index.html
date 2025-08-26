@@ -286,26 +286,11 @@
     margin-bottom: 20px;
   }
 
-  .video-gallery {
+ .video-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 sütun */
-    gap: 6px; /* aralar küçültülmüş */
+    gap: 6px;
     padding: 10px;
-  }
-
-  .video-frame {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* kare görünüm */
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    object-fit: cover; /* thumb düzgün sığsın */
-  }
-
-  .video-title {
-    font-size: 0.75rem; /* videoya orantılı küçültülmüş yazı */
-    text-align: center;
-    margin-top: 4px;
-    line-height: 1.2;
   }
 
   .video-card {
@@ -313,8 +298,21 @@
     flex-direction: column;
     align-items: center;
   }
-}
 
+  .video-frame {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* kare çerçeve */
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+
+  .video-title {
+    font-size: 0.75rem; /* küçük, videoya orantılı */
+    text-align: center;
+    margin-top: 4px;
+    line-height: 1.2;
+  }
 
   /* 📩 İletişim Bölümü */
   .contact-section {
@@ -797,6 +795,7 @@
   border-radius: 8px;
   display: inline-block;
 }
+
 
 
 
