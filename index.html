@@ -170,46 +170,6 @@
       /* 📱 Mobil görünüm düzenlemeleri */
 @media (max-width: 768px) {
 
-  /* Profil kısmı */
-  .profile-pic {
-    width: 140px;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto;
-    display: block;
-  }
-
-  /* Hakkımda kısmı */
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .about-pic {
-    width: 80%;
-    max-width: 250px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .about-right {
-    padding: 10px;
-    text-align: center;
-  }
-
-  .about-right h2 {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
-  }
-
-  .about-right p {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-
   /* Başlık - Navbar */
   header h1 {
     font-size: 1.3rem;
@@ -241,7 +201,7 @@
 
   /* Hakkımda Bölümü */
   .about-container {
-    flex-direction: column;
+    flex-direction: column; /* yan yana değil, alt alta */
     gap: 20px;
     text-align: center;
   }
@@ -277,80 +237,69 @@
 
   /* 🎥 Galeri Bölümü */
   .gallery {
-    padding: 40px 8px;
+    padding: 60px 10px;
   }
 
   .gallery h2 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 
   .video-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 sütun */
-    gap: 6px;
-    padding: 5px;
+    gap: 5px;
   }
 
   .video-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
   }
 
   .video-frame {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* kare çerçeve */
-    border: 2px solid #ddd;
+    aspect-ratio: 1 / 1;   /* kare çerçeve */
+    border: 2px solid #ffb6c1;
     border-radius: 6px;
-    object-fit: cover;
-    /* 🔹 Videonun ilk karesi kapak olsun */
-    background: #000;
+    overflow: hidden;
   }
 
   .video-frame video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 6px;
-  }
-
-  .video-frame video::-webkit-media-controls {
-    display: none !important; /* Kapak görünürken kontrolleri gizle */
   }
 
   .video-title {
-    font-size: 0.7rem;
+    font-size: clamp(0.55rem, 1.5vw, 0.75rem); /* ekrana göre orantılı yazı boyutu */
+    padding: 2px;
     text-align: center;
-    margin-top: 4px;
-    line-height: 1.2;
+    margin-top: 3px;
   }
 
   /* 📩 İletişim Bölümü */
   .contact-section {
-    padding: 40px 12px;
+    padding: 60px 15px;
   }
 
   .contact-section h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .contact-section .subtitle {
-    font-size: 0.85rem;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
   }
 
   .contact-cards {
-    flex-direction: column;
+    flex-direction: column; /* alt alta */
     align-items: center;
-    gap: 12px;
+    gap: 15px;
   }
 
   .contact-card,
   .special-card {
     width: 90% !important;
-    max-width: 300px;
-    padding: 12px;
+    max-width: 320px;
+    padding: 15px;
   }
 
   .contact-card h3 {
@@ -359,11 +308,9 @@
 
   .contact-card p,
   .contact-card li {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 }
-
-
 
     </style>
   </head>
