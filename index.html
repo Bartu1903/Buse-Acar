@@ -555,6 +555,164 @@
 <!-- 🎨 TASARIM (CSS) -->
 <style>
 
+/* 📱 Mobil görünüm düzenlemeleri */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 0.85rem;
+  }
+
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+  }
+
+  .about-container {
+    flex-direction: column; /* yan yana değil, alt alta */
+    gap: 20px;
+    text-align: center;
+  }
+
+  .about-pic {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .about-right {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-right h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-right p {
+    font-size: 0.95rem;
+  }
+
+  .about-list-box {
+    padding: 15px;
+  }
+
+  .about-list-box li {
+    font-size: 0.9rem;
+  }
+
+  /* 🎥 Mobil video galerisi 4x4 */
+  .video-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sütun */
+    gap: 8px; /* sütun arası boşluk */
+  }
+
+  .video-card {
+    width: 100%; /* her sütuna sığması için */
+  }
+
+  .video-frame {
+    border-width: 2px;
+    height: 80px;   /* mobilde küçük boy */
+    object-fit: cover; /* thumbnail gibi görünüm */
+  }
+
+  .video-frame video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-title {
+    font-size: 0.8rem;
+    padding: 4px;
+    text-align: center;
+  }
+
+  .contact-cards {
+    flex-direction: column; /* alt alta */
+    align-items: center;
+  }
+
+  .contact-card,
+  .special-card {
+    width: 90% !important;
+    max-width: 320px;
+  }
+
+  footer img {
+    width: 28px;
+    height: 28px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+
+
+.gallery {
+  padding: 80px 20px;
+  background: #fff5f9;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #e75480;
+}
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: start;
+}
+
+.video-card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.video-frame {
+  border: 6px solid #ffb6c1; /* galeri video çerçeve pembe ton */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-frame video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-title {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #d63384;
+  background: linear-gradient(90deg, #ffe0ec, #fff5f9);
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+</style>
 
 
 
