@@ -167,6 +167,151 @@
         position: absolute;
         left: 0;
       }
+      /* 📱 Mobil görünüm düzenlemeleri */
+@media (max-width: 768px) {
+
+  /* Başlık - Navbar */
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 0.85rem;
+  }
+
+  /* Profil Bölümü */
+  .profile-section {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+  }
+
+  .profile-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .role {
+    font-size: 0.95rem;
+  }
+
+  /* Hakkımda Bölümü */
+  .about-container {
+    flex-direction: column; /* yan yana değil, alt alta */
+    gap: 20px;
+    text-align: center;
+  }
+
+  .about-pic {
+    width: 90%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .about-right {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .about-right h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .about-right p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .about-list-box {
+    padding: 12px;
+  }
+
+  .about-list-box li {
+    font-size: 0.85rem;
+  }
+
+  /* 🎥 Galeri Bölümü */
+  .gallery {
+    padding: 60px 10px;
+  }
+
+  .gallery h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .video-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sütun */
+    gap: 5px;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+
+  .video-frame {
+    aspect-ratio: 1 / 1;   /* kare çerçeve */
+    border: 2px solid #ffb6c1;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .video-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-title {
+    font-size: clamp(0.55rem, 1.5vw, 0.75rem); /* ekrana göre orantılı yazı boyutu */
+    padding: 2px;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  /* 📩 İletişim Bölümü */
+  .contact-section {
+    padding: 60px 15px;
+  }
+
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-section .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+
+  .contact-cards {
+    flex-direction: column; /* alt alta */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .contact-card,
+  .special-card {
+    width: 90% !important;
+    max-width: 320px;
+    padding: 15px;
+  }
+
+  .contact-card h3 {
+    font-size: 1rem;
+  }
+
+  .contact-card p,
+  .contact-card li {
+    font-size: 0.85rem;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -612,39 +757,7 @@
   display: inline-block;
 }
 
-  /* 📱 Mobil görünüm düzenlemeleri */
-@media (max-width: 768px) {
-  .video-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 sütun */
-    gap: 6px;
-  }
 
-  .video-card {
-    width: 100%;
-  }
-
-  .video-frame {
-    aspect-ratio: 1 / 1;   /* kare çerçeve */
-    border: 2px solid #ffb6c1;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .video-frame video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* kapak gibi */
-    display: block;
-  }
-
-  .video-title {
-    font-size: clamp(0.5rem, 1.2vw, 0.8rem); /* ekrana göre orantılı yazı boyutu */
-    padding: 3px;
-    text-align: center;
-    margin-top: 4px;
-  }
-}
 
 
 
