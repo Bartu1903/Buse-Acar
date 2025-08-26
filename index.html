@@ -555,57 +555,131 @@
 <!-- 🎨 TASARIM (CSS) -->
 <style>
 
-/* 📱 Mobil görünüm düzenlemeleri */
+<!-- 🎥 Mobil Galeri (4x4) -->
+<section id="gallery" class="gallery">
+  <h2>🎥 Galeri</h2>
+  <div class="video-gallery-mobile">
+    <!-- Video Kartları -->
+    <div class="video-card-mobile">
+      <video controls poster="images/Kremi_Beauty.jpg"></video>
+      <div class="video-title-mobile">💄 Kremi Beauty</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Be_You.jpg"></video>
+      <div class="video-title-mobile">🌸 Be You</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Be_You2.jpg"></video>
+      <div class="video-title-mobile">🌈 Be You (2)</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Ceiles.jpg"></video>
+      <div class="video-title-mobile">💎 Ceiles</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Lcw.jpg"></video>
+      <div class="video-title-mobile">👕 Lcw</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Garnier.jpg"></video>
+      <div class="video-title-mobile">🌿 Garnier</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Kiko.jpg"></video>
+      <div class="video-title-mobile">💋 Kiko</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Loreal.jpg"></video>
+      <div class="video-title-mobile">👑 Loreal</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Mango.jpg"></video>
+      <div class="video-title-mobile">👜 Mango</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/New_Balance.jpg"></video>
+      <div class="video-title-mobile">👟 New Balance</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Sevilen_Tekstil.jpg"></video>
+      <div class="video-title-mobile">🧵 Sevilen Tekstil</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Shevec.jpg"></video>
+      <div class="video-title-mobile">🕶️ Shevec</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Zara.jpg"></video>
+      <div class="video-title-mobile">👗 Zara</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Beraber.jpg"></video>
+      <div class="video-title-mobile">🤝 Beraber Hazırlanalım</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Beraber2.jpg"></video>
+      <div class="video-title-mobile">💃 Beraber Hazırlanalım (2)</div>
+    </div>
+
+    <div class="video-card-mobile">
+      <video controls poster="images/Beraber3.jpg"></video>
+      <div class="video-title-mobile">🎀 Beraber Hazırlanalım (3)</div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* 🌸 Sadece mobil görünüm için */
 @media (max-width: 768px) {
-  /* Genel başlık ve navbar küçültme */
-  header h1 { font-size: 1.4rem; }
-  nav a { margin: 0 8px; font-size: 0.85rem; }
-
-  .profile-pic { width: 110px; height: 110px; }
-
-  .about-container { flex-direction: column; gap: 20px; text-align: center; }
-  .about-pic { width: 90%; max-width: 300px; height: auto; }
-  .about-right { text-align: center; padding: 20px; }
-  .about-right h2 { font-size: 1.4rem; }
-  .about-right p { font-size: 0.95rem; }
-  .about-list-box { padding: 15px; }
-  .about-list-box li { font-size: 0.9rem; }
-
-  /* 🎥 Mobil video galerisi 4x4 */
-  .video-gallery {
+  .video-gallery-mobile {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 sütun */
     gap: 6px;
+    justify-items: center;
   }
 
-  .video-card {
-    padding-bottom: 10px;
-  }
-
-  .video-frame {
-    border-width: 2px;
-    height: 80px; /* thumbnail yüksekliği */
+  .video-card-mobile {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* kare çerçeve */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
     border-radius: 8px;
+    background: #fff0f6;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   }
 
-  .video-frame video {
+  .video-card-mobile video {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* videoyu kapsayıcıya sığdır */
+    height: auto;
+    flex: 1;
+    object-fit: cover;
   }
 
-  .video-title {
-    font-size: 0.75rem;
-    padding: 3px;
+  .video-title-mobile {
+    font-size: 0.7rem; /* videoyla orantılı */
+    padding: 3px 0;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    width: 100%;
   }
-
-  /* İletişim kartları ve footer */
-  .contact-cards { flex-direction: column; align-items: center; }
-  .contact-card, .special-card { width: 90% !important; max-width: 320px; }
-  footer img { width: 28px; height: 28px; }
-  footer p { font-size: 12px; }
 }
+</style>
 
 
 
@@ -666,6 +740,7 @@
   border-radius: 8px;
   display: inline-block;
 }
+
 
 
 
