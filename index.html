@@ -557,101 +557,56 @@
 
 /* 📱 Mobil görünüm düzenlemeleri */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 1.4rem;
-  }
+  /* Genel başlık ve navbar küçültme */
+  header h1 { font-size: 1.4rem; }
+  nav a { margin: 0 8px; font-size: 0.85rem; }
 
-  nav a {
-    margin: 0 8px;
-    font-size: 0.85rem;
-  }
+  .profile-pic { width: 110px; height: 110px; }
 
-  .profile-pic {
-    width: 110px;
-    height: 110px;
-  }
-
-  .about-container {
-    flex-direction: column; /* yan yana değil, alt alta */
-    gap: 20px;
-    text-align: center;
-  }
-
-  .about-pic {
-    width: 90%;
-    max-width: 300px;
-    height: auto;
-  }
-
-  .about-right {
-    text-align: center;
-    padding: 20px;
-  }
-
-  .about-right h2 {
-    font-size: 1.4rem;
-  }
-
-  .about-right p {
-    font-size: 0.95rem;
-  }
-
-  .about-list-box {
-    padding: 15px;
-  }
-
-  .about-list-box li {
-    font-size: 0.9rem;
-  }
+  .about-container { flex-direction: column; gap: 20px; text-align: center; }
+  .about-pic { width: 90%; max-width: 300px; height: auto; }
+  .about-right { text-align: center; padding: 20px; }
+  .about-right h2 { font-size: 1.4rem; }
+  .about-right p { font-size: 0.95rem; }
+  .about-list-box { padding: 15px; }
+  .about-list-box li { font-size: 0.9rem; }
 
   /* 🎥 Mobil video galerisi 4x4 */
   .video-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 sütun */
-    gap: 8px; /* sütun arası boşluk */
+    gap: 6px;
   }
 
   .video-card {
-    width: 25%; /* her sütuna sığması için */
+    padding-bottom: 10px;
   }
 
   .video-frame {
     border-width: 2px;
-    height: 40px;   /* mobilde küçük boy */
-    object-fit: cover; /* thumbnail gibi görünüm */
+    height: 80px; /* thumbnail yüksekliği */
+    overflow: hidden;
+    border-radius: 8px;
   }
 
   .video-frame video {
     width: 100%;
     height: 100%;
+    object-fit: cover; /* videoyu kapsayıcıya sığdır */
   }
 
   .video-title {
-    font-size: 0.8rem;
-    padding: 4px;
-    text-align: center;
+    font-size: 0.75rem;
+    padding: 3px;
   }
 
-  .contact-cards {
-    flex-direction: column; /* alt alta */
-    align-items: center;
-  }
-
-  .contact-card,
-  .special-card {
-    width: 90% !important;
-    max-width: 320px;
-  }
-
-  footer img {
-    width: 28px;
-    height: 28px;
-  }
-
-  footer p {
-    font-size: 12px;
-  }
+  /* İletişim kartları ve footer */
+  .contact-cards { flex-direction: column; align-items: center; }
+  .contact-card, .special-card { width: 90% !important; max-width: 320px; }
+  footer img { width: 28px; height: 28px; }
+  footer p { font-size: 12px; }
 }
+
 
 
 
@@ -711,6 +666,7 @@
   border-radius: 8px;
   display: inline-block;
 }
+
 
 
 
