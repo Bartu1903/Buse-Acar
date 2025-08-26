@@ -555,84 +555,6 @@
 <!-- 🎨 TASARIM (CSS) -->
 <style>
 
-<!-- 🎥 Mobil Galeri (4x4) -->
-<section id="gallery" class="gallery">
-  <h2>🎥 Galeri</h2>
-  <div class="video-gallery-mobile">
-    <!-- Video Kartları -->
-    <div class="video-card-mobile">
-      <video controls muted preload="metadata">
-        <source src="videos/Kremi_Beauty.mp4" type="video/mp4">
-      </video>
-      <div class="video-title-mobile">💄 Kremi Beauty</div>
-    </div>
-
-    <div class="video-card-mobile">
-      <video controls muted preload="metadata">
-        <source src="videos/Be_You.mp4" type="video/mp4">
-      </video>
-      <div class="video-title-mobile">🌸 Be You</div>
-    </div>
-
-    <div class="video-card-mobile">
-      <video controls muted preload="metadata">
-        <source src="videos/Be_You2.mp4" type="video/mp4">
-      </video>
-      <div class="video-title-mobile">🌈 Be You (2)</div>
-    </div>
-
-    <div class="video-card-mobile">
-      <video controls muted preload="metadata">
-        <source src="videos/Ceiles.mp4" type="video/mp4">
-      </video>
-      <div class="video-title-mobile">💎 Ceiles</div>
-    </div>
-
-    <!-- ... diğer videolar aynı şekilde ... -->
-  </div>
-</section>
-
-<style>
-/* 🌸 Sadece mobil görünüm için */
-@media (max-width: 768px) {
-  .video-gallery-mobile {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 sütun */
-    gap: 6px;
-    justify-items: center;
-  }
-
-  .video-card-mobile {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* kare çerçeve */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 8px;
-    background: #fff0f6;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  }
-
-  .video-card-mobile video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* videoyu kırpıp kareye sığdırır */
-    border-bottom: 1px solid #ddd;
-  }
-
-  .video-title-mobile {
-    font-size: clamp(0.5rem, 1vw, 0.8rem); /* ekran boyutuna göre küçülür */
-    padding: 2px 0;
-    text-align: center;
-    background: rgba(255,255,255,0.85);
-    width: 100%;
-  }
-}
-</style>
-
-</style>
-
 
 
 
@@ -692,6 +614,7 @@
   border-radius: 8px;
   display: inline-block;
 }
+
 
 
 
