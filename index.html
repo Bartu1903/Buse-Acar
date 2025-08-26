@@ -639,8 +639,11 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
- .video-frame video {
-    display: "images/kapak.png" type="photo/png"; /* kart arka planı */
+.video-frame video {
+    display: none; /* videoyu gizle */
+  }
+  .video-frame {
+    background: url('images/kapak.png') center center / cover no-repeat;
   }
 
 }
